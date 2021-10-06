@@ -1,0 +1,231 @@
+$primary_color_d: #34534D;
+$primary_color_l: #94B9B2;
+$secondary_color_d: #5E443B;
+$secondary_color_l: #B3848D;
+
+h1, h2 {
+  line-height: 1.3em;
+  color: $secondary_color_l;
+}
+
+.c1l, .c1d, .c2l, .c2d {
+  padding: .2em .4em;
+  border-radius: 3pt;
+}
+
+.c1l { background: $primary_color_l; }
+.c1d { background: $primary_color_d; color: #ffffffcc;}
+.c2l { background: $secondary_color_l; }
+.c2d { background: $secondary_color_d; color: #ffffffcc; }
+
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active > a {
+  color: $primary_color_l !important;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: $primary_color_l !important;
+}
+
+// ruler at page bottom 
+
+hr {
+  height: 1px !important;
+}
+
+// beware and think boxes
+
+.beware, .think {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 100px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 120px;
+}
+
+.beware {
+  background-image: url("img/beware.svg");
+  color: $secondary_color_d;
+  transition-duration: 0.2s;
+  background-color: $secondary_color_l;
+  border: solid 3px $secondary_color_d;
+}
+
+.beware code {
+  background: $secondary_color_d !important;
+  color: $secondary_color_l !important;
+}
+
+.think {
+  background-image: url("img/think.svg");
+  color: $primary_color_l;
+  background-color: $primary_color_d;
+  border: solid 3px $primary_color_l;
+}
+
+.think code {
+  background: $primary_color_l !important;
+  color: $primary_color_d !important;
+}
+
+/* code folding buttons ----------- */
+
+.button {
+   color: #ccc;
+}
+
+.pull-right {
+   color: #ccc;
+}
+
+.dropdown-toggle {
+   color: #000000cc;
+}
+
+.code-folding-btn { margin-bottom: 4px; }
+.row { display: flex; }
+.collapse { display: none; }
+.in { display:block }
+.pull-right > .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.open > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 12;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 4px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #eee;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.dropdown-menu a {
+  color: #000;
+}
+
+.dropdown-menu a:hover {
+  color: $primary_color_d;
+}
+
+.checktrue, .demoslider {
+  position: relative; 
+  display: block;
+  margin: 5px 0 5px 10px;
+  width: 49px; 
+  height: 18px;
+  border-radius: 12px;
+  transition: 350ms;
+  background: linear-gradient(#d7d7d7, #C6C6C6, #BDBDBD); 
+  box-shadow: inset 0 0 0.2em 0.02em rgba(0, 0, 0, 0.5);
+}
+
+.checktrue {
+  cursor: pointer;
+}
+
+.checktrue::after, .demonob {
+  position: absolute; content:'';
+  width: 12px; 
+  height: 12px;
+  top: 3px; 
+  left: 5px;
+  border-radius: 50%;
+  transition: 250ms ease-in-out;
+  background: #ECECEC;/*linear-gradient(#555 10%,#444);*/ 
+  box-shadow:
+    inset 0 0.05em 0.08em -0.01em rgba(0, 0, 0, 0.5);;
+}
+
+.checktrue::after, .demonob {
+  top: 3px; 
+  left: 5px;
+}
+
+.demonob {
+  top: -2px; 
+  left: -2px;
+}
+
+.checktrue::before, .demobg {
+  position: absolute; 
+  content:'';
+  width: 34px; 
+  height: 8px;
+  top: 5px; 
+  left: 7px;
+  border-radius: 15px;
+  transition: 250ms ease-in-out;
+  background:  #C1C1C1;
+  box-shadow: inset 0 0 0.2em 0.02em rgba(0, 0, 0, 0.5); 
+}
+
+input:checked + .checktrue::before {
+  background: $secondary_color_l;
+}
+
+input:checked + .checktrue::after {
+left: 33px;
+}
+
+input {
+  visibility: hidden;
+}
+
+.r-code-collapse {
+  transition: 250ms ease-in-out;
+}
+
+.bg-save {
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
+  background-position: calc(100% - 15px) 15px !important;
+  background-image: url("img/save.svg") !important;
+  background-color: #DDDDDD !important;
+}
+
+.bg-save code {
+  background-color: #DDDDDD !important;
+}
+
+/* link anchors on section titles */
+a.anchor {
+  margin-left: 0px;
+  padding-right: 3px;
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(img/anchor.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: 20px 20px !important;
+  background-position: center bottom !important;
+  opacity: 0;
+}
+
+.hasAnchor:hover a.anchor, a.anchor:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 1144px) { /* dont show anchor link on small screens */
+  .hasAnchor:hover a.anchor {
+visibility: hidden;
+  }
+}

@@ -1,0 +1,8 @@
+book_filename: "EAS_GitHub_Landing"
+chapter_name: ""
+repo: https://livingingroups/methods_support_repository
+output_dir: ../docs
+rmd_files: ["index.Rmd"]
+clean: [packages.bib, bookdown.bbl]
+new_session: yes
+delete_merged_file: True
