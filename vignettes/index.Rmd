@@ -28,14 +28,17 @@ create_html_header("fold") # either "show" or "fold"
 
 # Links
 
-## Open Data Science (ODS) Wiki:
+**Open Data Science (ODS) Wiki:**
 https://github.com/livingingroups/ods_wiki/wiki
 
-## Methods Support Program:
+**Project Management and Logisticcs**
+https://github.com/livingingroups/project_management_and_logistics/blob/main/README.md
+
+**Methods Support Program:**
 https://livingingroups.github.io/methods_support_repository
 
-## Resources and Tutorials:
+**Resources and Tutorials:**
 https://github.com/livingingroups/resource_and_tutorials
 
-## Template for EAS Bookdown (which is used for this page as well):
+**Template for EAS Bookdown (which is used for this page as well):**
 https://github.com/livingingroups/eas_bookdown

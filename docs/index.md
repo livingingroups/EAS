@@ -1,8 +1,8 @@
 ---
 title: "Ecology of Animal Societies - GitHub Landing Page"
 subtitle: "Webpage with links to all things related to the EAS GitHub Account"
-author: "Many"
-date: "2021-10-05"
+author: ""
+date: "2021-10-06"
 documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
@@ -20,14 +20,17 @@ editor_options:
 
 # Links
 
-## Open Data Science (ODS) Wiki:
+**Open Data Science (ODS) Wiki:**
 https://github.com/livingingroups/ods_wiki/wiki
 
-## Methods Support Program:
+**Project Management and Logisticcs**
+https://github.com/livingingroups/project_management_and_logistics/blob/main/README.md
+
+**Methods Support Program:**
 https://livingingroups.github.io/methods_support_repository
 
-## Resources and Tutorials:
+**Resources and Tutorials:**
 https://github.com/livingingroups/resource_and_tutorials
 
-## Template for EAS Bookdown (which is used for this page as well):
+**Template for EAS Bookdown (which is used for this page as well):**
 https://github.com/livingingroups/eas_bookdown
